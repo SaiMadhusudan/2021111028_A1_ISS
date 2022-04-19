@@ -17,6 +17,8 @@ Directories
             Running the file
             Input 
             ./Q1.sh file.txt
+            Output
+            Removes duplicate line and empty lines
     |->Q2
         |->Q2.sh
             Running the file
