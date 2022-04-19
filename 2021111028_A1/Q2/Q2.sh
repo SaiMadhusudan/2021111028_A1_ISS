@@ -44,7 +44,7 @@ do
    if [ "$j" = "2" ];
    then
         {
-            echo -n "once said \""
+            echo -n "once said,\""
         }
    fi
 
@@ -61,16 +61,23 @@ do
         
       if [ "${word[0]:0:1}" != "$char_" ] && [ "$j" = "0" ];
       then
-      { 
+      {  
+         if [[ "${word}" == *"."* ]]; 
+         then
+         word="${word[*]/"."/\"}"
+         echo -n "${word}"
+         echo -n "."
+         else
          echo -n "${word} "
+         fi
       }
       fi
    done
-   
+
    if [ "$j" = "2" ];
    then
    {
-      echo "\" "
+      echo ""
    }
    fi
    
@@ -82,6 +89,4 @@ do
    fi
 
    let j=0
-
 done < $1
-
