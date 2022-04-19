@@ -64,7 +64,7 @@ while IFS= read -r line || [ -n "$line" ];
 do 
    for word in $line
    do
-     echo  "$word $( grep -o -i "$word" data.txt | wc -l)" >> temp.txt
+     echo  "$word $( grep -o -i "$word" $1 | wc -l)" >> temp.txt
    done
 done < $1
 
