@@ -20,13 +20,11 @@ do
   swap_count=0
    for((i=0;i<n;i++))
    {  
-      let a=${arr[i]}
-      let b=${arr[i+1]}
-
-      if [ $a -gt $b ]
+      if [ ${arr[i]} -gt ${arr[i+1]} ]
       then
-         arr[i+1]=$a
-         arr[i]=$b
+         let temp=${arr[i]}
+         arr[i]=${arr[i+1]}
+         arr[i+1]=$temp
          swap_count=$swap_count+1
       fi
    }
