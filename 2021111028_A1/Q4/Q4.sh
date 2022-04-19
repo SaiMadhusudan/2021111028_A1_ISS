@@ -14,10 +14,10 @@ done
 let n=${#arr[*]} 
 let n--
 
-let s=1
-while (($s))
+let swap_count=1
+while (($swap_count))
 do 
-  s=0
+  swap_count=0
    for((i=0;i<n;i++))
    {  
       let a=${arr[i]}
@@ -27,7 +27,7 @@ do
       then
          arr[i+1]=$a
          arr[i]=$b
-         s=$s+1
+         swap_count=$swap_count+1
       fi
    }
 done
