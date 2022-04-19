@@ -26,7 +26,7 @@ do
         if [ "$j" = "1" ];
         then
         {
-           echo -n "${word[0]:1} "
+           echo -n "${word[0]:1} " >> speech.txt
            let j=2
            continue
         }
@@ -35,7 +35,7 @@ do
         if [ "$j" = "2" ];
         then
         {
-           echo -n "${word} "
+           echo -n "${word} " >> speech.txt
            let j=2
         }
        fi
@@ -44,7 +44,7 @@ do
    if [ "$j" = "2" ];
    then
         {
-            echo -n "once said,\""
+            echo -n "once said,\"" >> speech.txt
         }
    fi
 
@@ -65,10 +65,10 @@ do
          if [[ "${word}" == *"."* ]]; 
          then
          word="${word[*]/"."/\"}"
-         echo -n "${word}"
-         echo -n "."
+         echo -n "${word}" >> speech.txt
+         echo -n "." >> speech.txt
          else
-         echo -n "${word} "
+         echo -n "${word} " >> speech.txt
          fi
       }
       fi
@@ -77,14 +77,14 @@ do
    if [ "$j" = "2" ];
    then
    {
-      echo ""
+      echo "" >> speech.txt
    }
    fi
    
    if [ "$j" = "0" ];
    then
    {
-      echo ""
+      echo "" >> speech.txt
    }
    fi
 
