@@ -37,12 +37,15 @@ Directories
         |->Q4.sh
             Running the file
     |->Q5
-        |->Q5a.sh
+        |->Q5.sh
             Running the file
-        |->Q5b.sh
-            Running the file
-        |->Q5c.sh
-            Running the file
+            $./Q5.sh
+            example
+            Input   Helloo
+            Output  oolleH
+                    ppmmfI
+                    leHloo
+        
 
 Github repo link: https://github.com/SaiMadhusudan/2021111028_A1_ISS.git
 
