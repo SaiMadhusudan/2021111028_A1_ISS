@@ -23,16 +23,21 @@ Directories
         |->Q2.sh
             Running the file
     |->Q3
-        |->Q3a.sh
+        |->Q3.sh
             Running the file
-        |->Q3b.sh
-            Running the file
-        |->Q3c.sh
-            Running the file
-        |->Q3d.sh
-            Running the file
-        |->Q3e.sh
-            Running the file
+            example
+            Input
+            ./Q3.sh file.txt
+            Output
+            size of file ..
+            Number of lines ..
+            Number of words ..
+            Line No: <> - Count of Word 
+            ..
+              ..
+            ..
+            Word count
+            ..     
     |->Q4
         |->Q4.sh
             Running the file
