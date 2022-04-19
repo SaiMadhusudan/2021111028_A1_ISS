@@ -15,10 +15,8 @@ Directories
     |->Q1
         |->Q1a.sh
             Running the file
-            
-        |->Q1b.sh
-            Running the file
-        #speeches.txt file should be used
+            Input 
+            ./Q1.sh file.txt
     |->Q2
         |->Q2.sh
             Running the file
