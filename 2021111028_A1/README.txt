@@ -22,6 +22,10 @@ Directories
     |->Q2
         |->Q2.sh
             Running the file
+        |->1LINE.sh 
+            Running the file
+            It needs quotes.txt file
+            ./1LINE.sh
     |->Q3
         |->Q3.sh
             Running the file
